@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <table width="400" cellspacing="0" cellpadding="5" border="0">
+      {% for text, count in results.items %}
+      <tr>
+        <th>{{ text }}</th>
+        <td>{{ count }}</td>
+        <td><span style="background: black; height: 10px; display: block; width: {% widthratio count overall_count 200 %}px">&nbsp</span></td>
+      </tr>
+      {% endfor %}
+      <th>
+    </table>
+    <p><a href="/">Vote again</a></p>
+  </body>
+</html>
